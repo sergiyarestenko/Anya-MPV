@@ -3,6 +3,8 @@
 }
 .bg-img {
   background-image: url("../img/bg-main.jpeg");
+  background-repeat: repeat;
+
   background-image: image-set(
     url("../img/bg-main.webp"),
     url("../img/bg-main.jpeg")

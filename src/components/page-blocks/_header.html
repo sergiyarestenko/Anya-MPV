@@ -1,3 +1,33 @@
 <header class="header">
-  <div class="container">header</div>
+  <div class="container flex --just-space">
+    <div class="header__logo header__side flex">
+      <picture class="logo">
+        <source srcset=/img/logo.webp type=”image/webp”>
+        <source srcset=/img/logo.png type=”image/png>
+        
+        <img src=img/logo.png alt=”logo”>
+    </picture>
+    </div>
+    <div class="header__nav flex">
+      <ul class="nav flex">
+        <li class="active">Home</li>
+        <li>About Us</li>
+        <li>Residential</li>
+        <li>Commercial</li>
+        <li>Contact</li>
+      </ul>
+      nav
+    </div>
+    <div class="header__button header__side flex">
+      @@include('../UI/button.html', {
+        "class": "primary",
+        "title": "request design" 
+      })
+
+    </div>
+
+    
+
+
+  </div>
 </header>
