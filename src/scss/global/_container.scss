@@ -1,0 +1,13 @@
+.container {
+  width: 100%;
+  max-width: $container-width;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+}
