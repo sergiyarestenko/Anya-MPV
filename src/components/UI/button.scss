@@ -1,16 +1,19 @@
 .button {
-    $button-border-var:$space * 0.125;
+  $button-border-var: $space * 0.0625;
 
-     padding: $space (2 * $space);
-     font-size: $font-size-button;
-     border: solid ($button-border-var) currentColor;
-     border-radius: $button-border-var;
-     font-weight: 700;
-     text-transform: uppercase;
-     cursor: pointer;
-     &.primary {
-      background: transparent;
-        color: $text-opposite;
-     }
+  padding: $space (
+    2 * $space
+  );
+font-size: $font-size-button;
+border: solid ($button-border-var) currentColor;
+border-radius: $button-border-var * 2;
+font-weight: 700;
+text-transform: uppercase;
+cursor: pointer;
+
+&.primary {
+  background: transparent;
+  color: $text-opposite;
+}
 
 }

@@ -4,16 +4,17 @@
     background: $bg-accent;
     width: 100%;
     z-index: 2;
-    
-    &__side {
-        width: 8.3333333%;
-        border: 1px solid 
-
-    }
 }
 .logo {
     img,source {
-        width: $space *4;
-        // width: 100%;
+        // width: $space *5;
+        height: $space * 4;
+        width: auto;
+    }
+}
+
+.nav {
+    .active {
+        text-decoration: underline;
     }
 }

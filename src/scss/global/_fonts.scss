@@ -22,3 +22,11 @@ body {
 .font-italic {
   font-style: italic;
 }
+
+.font-main {
+  font-size: $font-size-main;
+}
+
+.font-md {
+  font-size: 1.25 * $font-size-main;
+}
