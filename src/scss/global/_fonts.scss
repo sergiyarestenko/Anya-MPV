@@ -1,7 +1,5 @@
 .font-zilla {
-  font-family: "Zilla Slab Highlight", serif;
-  font-weight: 700;
-  font-style: normal;
+
 }
 
 body {
@@ -29,4 +27,15 @@ body {
 
 .font-md {
   font-size: 1.25 * $font-size-main;
+}
+
+.font-xl {
+  font-size: 4 * $font-size-main;
+  font-weight: 300;
+  letter-spacing: -.03em;
+  line-height: 1.05 * (4 * $font-size-main);
+}
+
+.font-uppercase {
+  text-transform: uppercase;
 }

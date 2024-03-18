@@ -15,5 +15,9 @@ cursor: pointer;
   background: transparent;
   color: $text-opposite;
 }
+&.accent {
+  background: $bg-accent;
+  color: $text-opposite;
+}
 
 }
