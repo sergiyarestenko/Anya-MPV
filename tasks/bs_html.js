@@ -1,16 +1,19 @@
 // import bs from "browser-sync";
 
-import {create as bsCreate} from 'browser-sync';
-const browserSync = bsCreate();
+import browserSync from 'browser-sync';
+// const browserSync = bsCreate();
 
 export default function bs_html() {
 	
-	browserSync.init({
+	browserSync({
 		server: {
 			baseDir: 'build/',
 			host: '192.168.0.104',
 		},
 		callbacks: {
+			msg: function(s) {
+				console.log(s);
+			}, 
 			ready: function (err, bs) {
 				bs.addMiddleware("*", function (req, res) {
 					res.writeHead(302, {

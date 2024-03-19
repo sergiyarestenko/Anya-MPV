@@ -1,6 +1,12 @@
 import gulp from "gulp";
 const { watch, series, parallel, src, dest, task } = gulp;
 
+// import del from 'del';
+
+import sync from 'browser-sync';
+
+
+
 import libs_style from "./tasks/libs_style.js";
 import svg_css from "./tasks/svg_css.js";
 import fonts from "./tasks/fonts.js";
@@ -17,35 +23,65 @@ import ttf2 from "./tasks/ttf2.js";
 import bs_html from "./tasks/bs_html.js";
 
 
+const projectFolder = 'build';
 
-task(
-  "default",
-  series(
-    bs_html,
-    parallel(
-      libs_style,
-      svg_css,
-      fonts,
-      style,
-      build_js,
-      libs_js,
-      dev_js,
-      html,
-      rastr,
-      webp,
-      svg_sprite,
-      ttf,
-      ttf2,
-      watching
-    )
-  )
-);
 
+
+
+
+
+const dev = gulp.parallel(
+  libs_style,
+  svg_css,
+  fonts,
+  style,
+  build_js,
+  libs_js,
+  dev_js,
+  html,
+  rastr,
+  webp,
+  svg_sprite,
+  ttf,
+  ttf2,
+)
+
+
+
+
+// task(
+//   "default",
+//   parallel(
+//     bs_html,
+
+//     watching
+//   )
+// );
+
+export const clean = () => {
+  return del('./' + projectFolder + '/');
+};
+
+
+export const browserSync = () => {
+  sync.init({
+      ui: false,
+      notify: false,
+      browser: 'default',
+      server: {
+        baseDir:  './' + projectFolder + '/',
+      },
+  });
+};
+
+const watchSync = gulp.parallel(
+  watching,
+  browserSync
+)
 
 
 function watching() {
   watch("src/**/*.html", parallel(html));
-  // watch('src/**/*.php', parallel('php'));
   watch("src/**/*.scss", parallel(style));
   watch("src/**/*.js", parallel(dev_js));
   watch("src/**/*.json", parallel(html));
@@ -55,6 +91,14 @@ function watching() {
   watch("src/svg/**/*.svg", series(svg_sprite, rastr));
   watch("src/fonts/**/*.ttf", series(ttf, ttf2, fonts));
 }
+
+
+export default gulp.series(
+  // clean,
+  dev,
+  watchSync,
+);
+
 
 // export const run = gulp.parallel(
 //   libs_style,
