@@ -1,12 +1,10 @@
-const {
-  src,
-  dest
-} = require('gulp');
-const changed = require('gulp-changed');
-const ttf2woff2 = require('gulp-ttftowoff2');
-const ttf2woff = require('gulp-ttf2woff');
+import gulp from "gulp";
+const { src, dest } = gulp;
+import changed from "gulp-changed";
+import ttf2woff2 from "gulp-ttftowoff2";
+import ttf2woff from "gulp-ttf2woff";
 
-module.exports = function ttf2(done) {
+export default function ttf2(done) {
   return src('src/fonts/**/*.ttf')
     .pipe(changed('build/fonts', {
       extension: 'woff',

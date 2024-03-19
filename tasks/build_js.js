@@ -1,14 +1,14 @@
-const {
-	src,
-	dest
-} = require('gulp');
-const uglify = require('gulp-uglify-es').default;
-const babel = require('gulp-babel');
-const concat = require('gulp-concat');
+import gulp from 'gulp';
+const {src, dest } = gulp;
 
-module.exports = function build_js() {
+import uglify from 'gulp-uglify-es';
+import babel from 'gulp-babel';
+
+import concat from 'gulp-concat';
+
+export default function build_js() {
 	return src(['src/components/**/*.js', 'src/js/01_main.js'])
-		.pipe(uglify())
+		.pipe(uglify.default())
 		.pipe(babel({
 			presets: ['@babel/env']
 		}))

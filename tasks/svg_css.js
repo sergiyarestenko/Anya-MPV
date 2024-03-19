@@ -1,11 +1,10 @@
-const {
-	src,
-	dest
-} = require('gulp');
-const svgmin = require('gulp-svgmin');
-const svgCss = require('gulp-svg-css-pseudo');
+import gulp from 'gulp';
+const {src, dest } = gulp;
+import svgmin from 'gulp-svgmin';
+import svgCss from 'gulp-svg-css-pseudo'
 
-module.exports = function svg_css() {
+
+export default function svg_css() {
 	return src('src/svg/css/**/*.svg')
 		.pipe(svgmin({
 			plugins: [{

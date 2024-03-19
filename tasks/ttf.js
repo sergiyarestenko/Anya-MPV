@@ -1,18 +1,18 @@
-const {
-  src,
-  dest
-} = require('gulp');
-const changed = require('gulp-changed');
-const ttf2woff2 = require('gulp-ttftowoff2');
-const ttf2woff = require('gulp-ttf2woff');
+import gulp from "gulp";
+const { src, dest } = gulp;
+import changed from "gulp-changed";
+import ttf2woff2 from "gulp-ttftowoff2";
+import ttf2woff from "gulp-ttf2woff";
 
-module.exports = function ttf(done) {
-  return src('src/fonts/**/*.ttf')
-    .pipe(changed('build/fonts', {
-      extension: '.woff2',
-      hasChanged: changed.compareLastModifiedTime
-    }))
+export default function ttf(done) {
+  return src("src/fonts/**/*.ttf")
+    .pipe(
+      changed("build/fonts", {
+        extension: ".woff2",
+        hasChanged: changed.compareLastModifiedTime,
+      })
+    )
     .pipe(ttf2woff2())
-    .pipe(dest('build/fonts'))
+    .pipe(dest("build/fonts"));
   done();
 }

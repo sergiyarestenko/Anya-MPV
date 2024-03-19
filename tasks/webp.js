@@ -1,17 +1,20 @@
-const {
-	src
-} = require('gulp');
-const webpConv = require('gulp-webp');
-const changed = require('gulp-changed');
-const multiDest = require('gulp-multi-dest');
-const plumber = require('gulp-plumber');
+import gulp from "gulp";
+const { src } = gulp;
 
-module.exports = function webp() {
-	return src('build/img/**/*.+(png|jpg|jpeg)')
-		.pipe(plumber())
-		.pipe(changed('build/img', {
-			extension: '.webp'
-		}))
-		.pipe(webpConv())
-		.pipe(multiDest(['src/img', 'build/img']))
+import webpConv from "gulp-webp";
+
+import changed from "gulp-changed";
+import multiDest from "gulp-multi-dest";
+import plumber from "gulp-plumber";
+
+export default function webp() {
+  return src("build/img/**/*.+(png|jpg|jpeg)")
+    .pipe(plumber())
+    .pipe(
+      changed("build/img", {
+        extension: ".webp",
+      })
+    )
+    .pipe(webpConv())
+    .pipe(multiDest(["src/img", "build/img"]));
 }

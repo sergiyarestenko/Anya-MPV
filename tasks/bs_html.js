@@ -1,7 +1,11 @@
-const bs = require('browser-sync');
+// import bs from "browser-sync";
 
-module.exports = function bs_html() {
-	bs.init({
+import {create as bsCreate} from 'browser-sync';
+const browserSync = bsCreate();
+
+export default function bs_html() {
+	
+	browserSync.init({
 		server: {
 			baseDir: 'build/',
 			host: '192.168.0.104',

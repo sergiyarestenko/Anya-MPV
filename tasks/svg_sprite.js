@@ -1,11 +1,11 @@
-const {
-	src,
-	dest
-} = require('gulp');
-const svgmin = require('gulp-svgmin');
-const sprite = require('gulp-svg-sprite');
+import gulp from "gulp";
+const { src, dest } = gulp;
 
-module.exports = function svg_sprite() {
+import svgmin from "gulp-svgmin";
+import sprite from "gulp-svg-sprite";
+
+
+export default function svg_sprite() {
 	return src('src/svg/**/*.svg')
 		.pipe(svgmin({
 			plugins: [{

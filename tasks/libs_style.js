@@ -1,15 +1,20 @@
+
+import gulp from 'gulp';
+const {src, dest } = gulp;
+import * as dartSass from 'sass';
+import gulpSass from 'gulp-sass';
+const sass = gulpSass(dartSass);
+
+import concat from 'gulp-concat';
+import map from 'gulp-sourcemaps';
+import chalk from 'chalk';
 const plugins = [];
 
-const {
-  src,
-  dest
-} = require('gulp');
-const sass = require('gulp-sass')(require('sass'));
-const concat = require('gulp-concat');
-const map = require('gulp-sourcemaps');
-const chalk = require('chalk');
 
-module.exports = function libs_style(done) {
+
+
+
+export default function libs_style(done) {
   if (plugins.length > 0) {
     return src(plugins)
       .pipe(map.init())
