@@ -1,25 +1,28 @@
 //colors
 $text-primary: rgba(15, 8, 6, 1);
-$text-opposite :rgba(248, 224, 210, 1);
+$text-opposite: rgba(248, 224, 210, 1);
 $text-accent: rgba(206, 38, 29, 1);
 
 //backgrounds
 
 $bg-primary: rgba(230, 230, 230, 1);
 $bg-accent: rgba(206, 38, 29, 1);
-$bg-gradient : linear-gradient(91.22deg, rgba(15, 8, 6, 0.43) 1.09%, rgba(166, 163, 163, 0.43) 69.64%, rgba(248, 224, 210, 0.43) 99.01%);
+$bg-gradient: linear-gradient(
+  91.22deg,
+  rgba(15, 8, 6, 0.43) 1.09%,
+  rgba(166, 163, 163, 0.43) 69.64%,
+  rgba(248, 224, 210, 0.43) 99.01%
+);
 
 // fonts
 
 $font-size-main: 16px; //sm
 $font-size-button: 1.125 * $font-size-main;
 
-
 //space
 
 $space: 16px;
 $container-width: 1512px;
-
 
 //hover
 
@@ -31,4 +34,3 @@ $mouse-device: '(hover:hover) and (pointer: fine)';
         someStyles
     }
 */
-

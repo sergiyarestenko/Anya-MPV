@@ -1,12 +1,8 @@
-.font-zilla {
-
-}
-
 body {
-  font-family: "Roboto Condensed", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
   font-style: normal;
+  font-weight: 400;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-optical-sizing: auto;
 }
 
 .font-light {
@@ -30,10 +26,10 @@ body {
 }
 
 .font-xl {
-  font-size: 4 * $font-size-main;
   font-weight: 300;
-  letter-spacing: -.03em;
+  font-size: 4 * $font-size-main;
   line-height: 1.05 * (4 * $font-size-main);
+  letter-spacing: -0.03em;
 }
 
 .font-uppercase {

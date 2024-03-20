@@ -1,13 +1,13 @@
 .top-block {
     padding-top: 20*$space;
     padding-bottom: 5 *$space;
-    background-image: url("../img/index-page-top-bg.jpeg");
+    background-image: url("../img/bg/index-page-top-bg.jpeg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
 
-    background-image: image-set(url("../img/index-page-top-bg.webp"),
-            url("../img/index-page-top-bg.jpeg"));
+    background-image: image-set(url("../img/bg/index-page-top-bg.webp"),
+            url("../img/bg/index-page-top-bg.jpeg"));
 
 
 }

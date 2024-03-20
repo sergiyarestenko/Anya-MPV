@@ -2,7 +2,6 @@
 
 .text-primary {
   color: $text-primary;
-
 }
 
 .text-accent {
@@ -19,25 +18,26 @@
 }
 
 .bg-img {
-  background-image: url("../img/bg-main.jpeg");
-  background-repeat: repeat;
+  background-image: url('../img/bg-main.jpeg');
 
-  background-image: image-set(url("../img/bg-main.webp"),
-      url("../img/bg-main.jpeg"));
+  background-image: image-set(url('../img/bg-main.webp'), url('../img/bg-main.jpeg'));
+  background-repeat: repeat;
 }
 
 .bg-gradient {
   position: relative;
+
   &::after {
-    content: '';
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     background: $bg-gradient;
+    content: '';
   }
-  &>*{
+
+  & > * {
     position: relative;
     z-index: 2;
   }

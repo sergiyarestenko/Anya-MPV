@@ -1,29 +1,29 @@
 .container {
+  margin: 0 auto;
+  padding-right: 0.5 * $space;
+  padding-left: 0.5 * $space;
   width: 100%;
   max-width: $container-width;
-  margin: 0 auto;
-  padding-left: 0.5 * $space;
-  padding-right: 0.5 * $space;
 }
 
 .content {
   display: flex;
-  flex-direction: column;
   flex: 1 0 auto;
+  flex-direction: column;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -0.5 * $space;
   margin-right: -0.5 * $space;
+  margin-left: -0.5 * $space;
 
   & > * {
     flex-shrink: 0;
+    padding-right: 0.5 * $space;
+    padding-left: 0.5 * $space;
     width: 100%;
     max-width: 100%;
-    padding-left: 0.5 * $space;
-    padding-right: 0.5 * $space;
   }
 }
 
