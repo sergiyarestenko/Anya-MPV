@@ -1,11 +1,9 @@
 import gulp from "gulp";
-const { watch, series, parallel, src, dest, task } = gulp;
+const { watch, series, parallel } = gulp;
 
-// import del from 'del';
+import {deleteAsync}  from "del";
 
 import sync from 'browser-sync';
-
-
 
 import libs_style from "./tasks/libs_style.js";
 import svg_css from "./tasks/svg_css.js";
@@ -20,14 +18,9 @@ import webp from "./tasks/webp.js";
 import svg_sprite from "./tasks/svg_sprite.js";
 import ttf from "./tasks/ttf.js";
 import ttf2 from "./tasks/ttf2.js";
-import bs_html from "./tasks/bs_html.js";
 
 
 const projectFolder = 'build';
-
-
-
-
 
 
 const dev = gulp.parallel(
@@ -39,27 +32,14 @@ const dev = gulp.parallel(
   libs_js,
   dev_js,
   html,
-  rastr,
-  webp,
+  series(rastr, webp),
   svg_sprite,
   ttf,
   ttf2,
 )
 
-
-
-
-// task(
-//   "default",
-//   parallel(
-//     bs_html,
-
-//     watching
-//   )
-// );
-
 export const clean = () => {
-  return del('./' + projectFolder + '/');
+  return deleteAsync('./' + projectFolder + '/');
 };
 
 
@@ -94,41 +74,8 @@ function watching() {
 
 
 export default gulp.series(
-  // clean,
+  clean,
   dev,
   watchSync,
 );
 
-
-// export const run = gulp.parallel(
-//   libs_style,
-//   svg_css,
-//   ttf,
-//   ttf2,
-//   fonts,
-//   style,
-//   libs_js,
-//   dev_js,
-//   rastr,
-//   webp,
-//   svg_sprite,
-//   html,
-//   bs_html,
-//   watch
-// )
-// export const dev_php = gulp.parallel(
-//   libs_style,
-//   svg_css,
-//   ttf,
-//   ttf2,
-//   fonts,
-//   style,
-//   libs_js,
-//   dev_js,
-//   rastr,
-//   webp,
-//   svg_sprite,
-//   php,
-//   bs_php,
-//   watch
-// )
