@@ -2,13 +2,9 @@
   <div class="container">
     <div class="row">
       <div class="header__logo col-2 --align-center">
-        <a href="/">
-          <img
-            src="./img/sprite.svg#logo_no_bg"
-            class="logo"
-            alt="AP-design logo"
-          />
-        </a>
+        @@include(
+          '../UI/_logo.html', 
+        )
       </div>
       <div class="header__nav col-8 flex --just-center --align-center">
         <ul class="nav flex font-md gap-3">

@@ -1,1 +1,43 @@
-<footer class="footer">footer</footer>
+<footer class="footer py-3">
+  <div class="container">
+    <div class="row">
+      <div class="col --align-center">@@include( '../UI/_logo.html', )</div>
+      <div class="col --just-center">
+        <div class="flex --dir-col">
+          <p>Ready to transform your space? </p>
+          <p>Contact us today</p>
+          <p>
+            @@include( '../UI/_sprite.html',{ "class": "call-icon", "id": "call-icon" })
+
+            123-123-1234
+          </p>
+        </div>
+      </div>
+
+      <div class="col --just-end gap-2">
+        <a href="#" class="flex">
+          @@include( '../UI/_sprite.html',{ "class": "social-icon", "id": "facebook-icon" })
+        </a>
+        <a href="#" class="flex">
+            @@include( '../UI/_sprite.html',{ "class": "social-icon", "id": "instagram-icon" })
+
+        </a>
+        <a href="#" class="flex">
+            @@include( '../UI/_sprite.html',{ "class": "social-icon", "id": "pinterest-icon" })
+
+
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <a href="#">Terms of services & Privacy Policy</a>
+      </div>
+      <div class="col --just-end">
+        <a href="#">&copy; Copyright 2024 AP Concept Design</a>
+      </div>
+    </div>
+  </div>
+</footer>

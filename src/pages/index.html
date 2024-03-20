@@ -8,17 +8,13 @@
 })
 
 <body>
-	@@include('../components/page-blocks/_header.html')
+	@@include('../components/page-joints/__top.html')
+	<!-- page content start-->
 
-	<div class="content">
+	@@include('../page-modules/index-page/top-block.html')
 
-
-			@@include('../page-blocks/index-page/top-block.html')
-
-		@@include('../components/page-blocks/_footer.html')
-		@@include('../components/page-blocks/_scripts.html')
-
-	</div>
+	<!-- page content end -->
+	@@include('../components/page-joints/__bottom.html')
 
 </body>
 

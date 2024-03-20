@@ -1,17 +1,15 @@
 .header {
-    position: sticky;
-    top: 0;
-    background: $bg-accent;
-    width: 100%;
-    z-index: 2;
-}
-.logo {
-        height: $space * 4;
-    
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background: $bg-accent;
+  width: 100%;
 }
 
+
+
 .nav {
-    .active {
-        text-decoration: underline;
-    }
+  .active {
+    text-decoration: underline;
+  }
 }
