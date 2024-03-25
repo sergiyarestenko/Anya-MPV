@@ -45,3 +45,14 @@ a:visited {
   color: inherit;
   text-decoration: none;
 }
+
+.hover-only {
+  @media (#{$touch-device}) {
+    display: none;
+  }
+}
+.touch-only {
+  @media (#{$mouse-device}) {
+    display: none;
+  }
+}

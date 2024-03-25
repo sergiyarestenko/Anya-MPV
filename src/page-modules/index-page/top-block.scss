@@ -1,13 +1,14 @@
 .top-block {
-    padding-top: 20*$space;
-    padding-bottom: 5 *$space;
-    background-image: url("../img/bg/index-page-top-bg.jpeg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
+  background-image: url('../img/bg/index-page-top-bg.jpeg');
 
-    background-image: image-set(url("../img/bg/index-page-top-bg.webp"),
-            url("../img/bg/index-page-top-bg.jpeg"));
-
-
+  background-image: image-set(
+    url('../img/bg/index-page-top-bg.webp'),
+    url('../img/bg/index-page-top-bg.jpeg')
+  );
+  
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 20 * $space;
+  padding-bottom: 5 * $space;
 }

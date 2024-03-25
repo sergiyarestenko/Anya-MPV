@@ -1,21 +1,14 @@
-<!DOCTYPE html>
-@@include('../components/page-blocks/_head.html',{
-"lang":"en",
-"title":"Anya-MVP",
-"description":"Gulp pack for easy html/php markup development",
-"keywords":"",
-"favicon":"img/favicons/favicon",
-})
 
-<body>
 	@@include('../components/page-joints/__top.html')
 	<!-- page content start-->
 
 	@@include('../page-modules/index-page/top-block.html')
+	<div class="index-page">
+		@@include('../page-modules/index-page/welcome-block.html')
+		@@include('../page-modules/index-page/content-block-one.html')
+
+	</div>
 
 	<!-- page content end -->
 	@@include('../components/page-joints/__bottom.html')
 
-</body>
-
-</html>

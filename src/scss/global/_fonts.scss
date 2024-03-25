@@ -21,17 +21,35 @@ body {
   font-size: $font-size-main;
 }
 
-.font-md {
+.font-sm {
   font-size: 1.25 * $font-size-main;
+  font-family: 400;
+  line-height: 1.6 * (1.25 * $font-size-main);
+}
+
+.font-md {
+  font-size: 1.5 * $font-size-main;
+  font-family: 400;
+  line-height: 1.333 * (1.5 * $font-size-main);
+}
+
+.font-l {
+  font-weight: 700;
+  font-size: 2 * $font-size-main;
+  line-height: 1.375 * (2 * $font-size-main);
 }
 
 .font-xl {
   font-weight: 300;
-  font-size: 4 * $font-size-main;
+  font-size: 2* $font-size-main;
   line-height: 1.05 * (4 * $font-size-main);
   letter-spacing: -0.03em;
 }
 
 .font-uppercase {
   text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
 }
