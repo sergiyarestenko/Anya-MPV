@@ -1,12 +1,12 @@
-<header class="header py-3">
+<header id="header" class="header" >
   <div class="container">
     <div class="row">
-      <div class="header__logo col-2 --align-center">
+      <div class="header__logo col-2 --align-center  ">
         @@include(
           '../UI/_logo.html', 
         )
       </div>
-      <div class="header__nav col-8 flex --just-center --align-center">
+      <div class="header__nav col-8 flex --just-center --align-center py-3" >
         <ul class="nav flex font-sm gap-3">
           <li class="active flex">
             <a href="#"> Home </a>
@@ -25,12 +25,14 @@
           </li>
         </ul>
       </div>
-      <div class="header__button col-2 --align-center --just-end">
+      <div class="header__button col-2 --align-center --just-end py-3">
         @@include(
           '../UI/_button.html', 
-          { "class": "primary", "title": "request design" }
+          { "class": "accent", "title": "request design" }
         )
       </div>
     </div>
   </div>
 </header>
+<span id="observer"></span>
+

@@ -1,12 +1,25 @@
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 3;
-  background: $bg-accent;
+  background: transparent;
   width: 100%;
+  transition: $transition-duration;
+  color: $text-opposite;
+
+  &.scrolled {
+    background: $bg-primary;
+    color: $text-primary;
+ 
+
+  }
 }
 
+.logo {
+  background: $bg-accent;
+  height: 100%;
 
+}
 
 .nav {
   .active {
