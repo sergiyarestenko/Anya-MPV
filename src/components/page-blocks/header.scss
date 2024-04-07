@@ -2,21 +2,18 @@
   position: fixed;
   top: 0;
   z-index: 3;
-  background: transparent;
+  background: $bg-accent;
   width: 100%;
   transition: $transition-duration;
-  color: $text-opposite;
+  color: $text-primary;
 
   &.scrolled {
-    background: $bg-primary;
-    color: $text-primary;
  
 
   }
 }
 
 .logo {
-  background: $bg-accent;
   height: 100%;
 
 }

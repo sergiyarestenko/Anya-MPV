@@ -10,11 +10,13 @@ border-radius: $button-border-var * 2;
 font-weight: 700;
 text-transform: uppercase;
 cursor: pointer;
+white-space: nowrap;
 
 &.primary {
   background: transparent;
   color: $text-opposite;
 }
+
 &.accent {
   background: $bg-accent;
   color: $text-primary;

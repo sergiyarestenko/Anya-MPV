@@ -27,5 +27,5 @@ const changeHeaderClassOnScroll = () => {
 }
 
 ;(function () {
-  changeHeaderClassOnScroll();
+  // changeHeaderClassOnScroll();
 })()
