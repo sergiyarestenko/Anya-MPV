@@ -5,7 +5,7 @@ import {deleteAsync}  from "del";
 
 import sync from 'browser-sync';
 
-import libs_style from "./tasks/libs_style.js";
+// import libs_style from "./tasks/libs_style.js";
 import svg_css from "./tasks/svg_css.js";
 import fonts from "./tasks/fonts.js";
 import style from "./tasks/style.js";
@@ -24,7 +24,7 @@ const projectFolder = 'build';
 
 
 const dev = gulp.parallel(
-  libs_style,
+  // libs_style,
   svg_css,
   fonts,
   style,

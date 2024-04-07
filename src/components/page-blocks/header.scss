@@ -4,19 +4,19 @@
   z-index: 3;
   background: transparent;
   width: 100%;
-  transition: $transition-duration;
-  color: $text-opposite;
+  // transition: $transition-duration;
+  // color: $text-opposite;
 
   &.scrolled {
-    background: $bg-primary;
-    color: $text-primary;
+    // background: $bg-primary;
+    // color: $text-primary;
  
 
   }
 }
 
 .logo {
-  background: $bg-accent;
+  // background: $bg-accent;
   height: 100%;
 
 }

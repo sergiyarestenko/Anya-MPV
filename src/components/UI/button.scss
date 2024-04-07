@@ -1,23 +1,23 @@
 .button {
-  $button-border-var: $space * 0.0625;
+  // $button-border-var: $space * 0.0625;
 
-  padding: $space (
-    2 * $space
-  );
-font-size: $font-size-button;
-border: solid ($button-border-var) currentColor;
-border-radius: $button-border-var * 2;
+  // padding: $space (
+  //   2 * $space
+  // );
+font-size: 20px;
+// border: solid ($button-border-var) currentColor;
+// border-radius: $button-border-var * 2;
 font-weight: 700;
 text-transform: uppercase;
 cursor: pointer;
 
 &.primary {
   background: transparent;
-  color: $text-opposite;
+  // color: $text-opposite;
 }
 &.accent {
-  background: $bg-accent;
-  color: $text-primary;
+  // background: $bg-accent;
+  // color: $text-primary;
 }
 
 }

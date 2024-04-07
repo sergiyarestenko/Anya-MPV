@@ -1,44 +1,29 @@
 // colors
 
-.text-primary {
-  color: $text-primary;
-}
 
-.text-accent {
-  color: $text-accent;
-}
 
-.text-opposite {
-  color: $text-opposite;
-}
+// .bg-img {
+//   background-image: url('../img/bg-main.jpeg');
 
-//backgrounds
-.bg-primary {
-  background-color: $bg-primary;
-}
+//   background-image: image-set(url('../img/bg-main.webp'), url('../img/bg-main.jpeg'));
+//   background-repeat: repeat;
+// }
 
-.bg-img {
-  background-image: url('../img/bg-main.jpeg');
+// .bg-gradient {
+//   position: relative;
 
-  background-image: image-set(url('../img/bg-main.webp'), url('../img/bg-main.jpeg'));
-  background-repeat: repeat;
-}
+//   &::after {
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     bottom: 0;
+//     left: 0;
+//     // background: $bg-gradient;
+//     content: '';
+//   }
 
-.bg-gradient {
-  position: relative;
-
-  &::after {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: $bg-gradient;
-    content: '';
-  }
-
-  & > * {
-    position: relative;
-    z-index: 2;
-  }
-}
+//   & > * {
+//     position: relative;
+//     z-index: 2;
+//   }
+// }
