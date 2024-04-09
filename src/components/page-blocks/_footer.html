@@ -1,7 +1,15 @@
 <footer class="footer py-3">
   <div class="container">
     <div class="row">
-      <div class="col --align-center">@@include( '../UI/_logo.html', )</div>
+      <div class="col --align-center">
+        
+        @@include(
+          '../UI/_sprite.html', {
+            "class": "logo__img",
+            "id": "logo_no_bg"
+          })      
+      
+      </div>
       <div class="col --just-center">
         <div class="flex --dir-col">
           <p>Ready to transform your space? </p>

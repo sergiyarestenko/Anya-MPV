@@ -7,10 +7,7 @@
   transition: $transition-duration;
   color: $text-primary;
 
-  &.scrolled {
- 
 
-  }
 }
 
 .logo {
@@ -22,4 +19,15 @@
   .active {
     text-decoration: underline;
   }
+}
+
+.burger-button {
+  width: $space *1.5;
+  height: $space *1.5;
+  cursor: pointer;
+}
+
+.logo__img {
+  height: $space * 4;
+  width: $space * 4;
 }
