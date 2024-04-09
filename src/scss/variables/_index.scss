@@ -21,8 +21,10 @@ $font-size-button: 1.125 * $font-size-main;
 
 //space
 
+$gutter: 1.5rem;
+
 $space: 16px;
-$container-width: 1512px;
+// $container-width: 1512px;
 
 
 //transitionDuration
@@ -33,6 +35,17 @@ $breakpoint-sm: 576px;
 $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
+$breakpoint-xxl: 1600px;
+
+
+
+
+$container-sm-max-width: 540px;
+$container-md-max-width: 720px;
+$container-lg-max-width: 960px;
+$container-xl-max-width: 1140px;
+$container-xxl-max-width: 1512px;
+
 
 
 //breakpoints

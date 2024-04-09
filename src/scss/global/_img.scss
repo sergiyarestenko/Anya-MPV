@@ -1,0 +1,25 @@
+.object-fit-contain {
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
+  
+  .object-fit-cover {
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  
+  .object-fit-fill {
+    -o-object-fit: fill;
+    object-fit: fill;
+  }
+  
+  .object-fit-scale {
+    -o-object-fit: scale-down;
+    object-fit: scale-down;
+  }
+  
+  .object-fit-none {
+    -o-object-fit: none;
+    object-fit: none;
+  }
+  

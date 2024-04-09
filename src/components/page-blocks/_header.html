@@ -1,38 +1,40 @@
-<header id="header" class="header" >
-  <div class="container test-1">
+<header id="header" class="header">
+  <div class="container-xl">
     <div class="row">
-      <div class="header__logo col-2 --align-center  test-1 col-sm col-md-2">
+      <div class="header__logo col-2 align-content-center  justify-content-start col-sm col-md-2">
         @@include(
-          '../UI/_logo.html', 
+        '../UI/_logo.html',
         )
       </div>
-      <div class="header__nav col flex --just-center --align-center py-3" >
-        <ul class="nav flex font-sm gap-3">
-          <li class="active flex">
+
+
+      
+      <div class="header__nav d-none d-lg-flex justify-content-center align-content-center py-3 test-1">
+        <ul class="nav d-flex font-sm gap-3 test-1">
+          <li class="active d-flex text-nowrap">
             <a href="#"> Home </a>
           </li>
-          <li class="flex">
+          <li class="d-flex text-nowrap">
             <a href="#"> About Us </a>
           </li>
-          <li class="flex">
+          <li class="d-flex text-nowrap">
             <a href="#"> Residential </a>
           </li>
-          <li class="flex">
+          <li class="d-flex text-nowrap">
             <a href="#"> Commercial </a>
           </li>
-          <li class="flex">
+          <li class="d-flex text-nowrap">
             <a href="#"> Contact </a>
           </li>
         </ul>
       </div>
-      <div class="header__button col-2 --align-center --just-end py-3">
+      <div class="header__button d-none d-lg-flex col-2 --align-center --just-end py-3">
         @@include(
-          '../UI/_button.html', 
-          { "class": "accent", "title": "request design" }
+        '../UI/_button.html',
+        { "class": "accent", "title": "request design" }
         )
       </div>
     </div>
   </div>
 </header>
 <span id="observer"></span>
-

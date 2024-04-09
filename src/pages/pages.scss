@@ -2,6 +2,6 @@
     background-image: url('../img/sprite.svg#bg-main-page');
     background-position-x: 50%;
     background-position-y: 10 * $space;
-    background-size: calc(min($container-width, 100%))
+    background-size: calc(min($container-xxl-max-width, 100%))
     ;
 }

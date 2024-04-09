@@ -1,5 +1,15 @@
 @import 'variables/*.scss';
 @import 'base/*.scss';
+@import 'bootstrap-custom/*.scss';
+// @import 'bootstrap-custom/custom-sm';
+// @import 'bootstrap-custom/custom-md';
+// @import 'bootstrap-custom/custom-lg';
+// @import 'bootstrap-custom/custom-xl';
+// @import 'bootstrap-custom/custom-xxl';
+
+
+
+
 @import 'global/*.scss';
 @import '**/_*.scss';
 @import '../components/**/*.scss';
