@@ -1,27 +1,28 @@
 <header id="header" class="header">
   <div class="container-xl">
-    <div class="row">
-      <div class="header__logo align-content-center  justify-content-start col col-lg-2 test-1">
+    <div class="row flex-nowrap ">
+      <div class="header__logo align-content-center  justify-content-start col col-lg-3 test-1">
         <a class="logo d-flex align-content-center" href="/">
           @@include(
-            '../UI/_sprite.html', {
-              "class": "logo__img",
-              "id": "logo_no_bg"
-            })
+          '../UI/_sprite.html', {
+          "class": "logo__img",
+          "id": "logo_no_bg"
+          })
         </a>
       </div>
-      <div class="header__burger col d-flex  justify-content-end test-1">
+      <div class="header__burger col d-flex d-lg-none justify-content-end">
         <div class="d-flex align-items-center h-100">
-          @@include(
+          <button class="icon-button" onclick="showMobileNav()">
+            @@include(
             '../UI/_sprite.html', {
-              "class": "burger-button",
-              "id": "menu_icon"
+            "id": "menu_icon"
             })
+          </button>
         </div>
       </div>
 
 
-      <div class="header__nav d-none d-lg-flex justify-content-center align-content-center py-3 test-1">
+      <nav id="nav" class="header__nav d-none d-lg-flex col justify-content-lg-center align-content-lg-center py-3 test-1">
         <ul class="nav d-flex font-sm gap-3 test-1">
           <li class="active d-flex text-nowrap">
             <a href="#"> Home </a>
@@ -39,8 +40,8 @@
             <a href="#"> Contact </a>
           </li>
         </ul>
-      </div>
-      <div class="header__button d-none d-lg-flex col-2 --align-center --just-end py-3">
+      </nav>
+      <div class="header__button d-none d-lg-flex col-3 align-items-center justify-content-end">
         @@include(
         '../UI/_button.html',
         { "class": "accent", "title": "request design" }

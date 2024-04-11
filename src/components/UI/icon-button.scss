@@ -1,0 +1,21 @@
+.icon-button {
+  width: 1.5 * $space;
+  height: 1.5*  $space;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  padding: 0;
+  svg {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+  }
+  &:hover {
+    animation: pulse; 
+    animation-duration: .5s;     
+  }
+
+
+}
+
+

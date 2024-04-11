@@ -21,13 +21,15 @@
   }
 }
 
-.burger-button {
-  width: $space *1.5;
-  height: $space *1.5;
-  cursor: pointer;
-}
 
 .logo__img {
+  margin: auto 0;
   height: $space * 4;
   width: $space * 4;
+}
+
+@media (min-width: $breakpoint-sm) {
+
+
+
 }
